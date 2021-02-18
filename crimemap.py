@@ -8,7 +8,7 @@ DB = DBHelper()
 def home():
     try:
         data = DB.get_all_puts()
-    except Exception as e:
+    except Exception as e :
         print(e)
         data = None
     return render_template('home.html', data=data)
